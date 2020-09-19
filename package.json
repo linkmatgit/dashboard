@@ -11,7 +11,9 @@
   "license": "MIT",
   "scripts": {
     "serve": "webpack-dev-server --progress --hide-modules --mode development",
-    "build": "webpack --progress --hide-modules --mode production"
+    "build": "webpack --progress --hide-modules --mode production",
+    "style": "stylelint **/*.scss --fix",
+    "fix-styles": "prettier-stylelint --write **/*.{css,scss} --fix --ignore src/styles/tools/*.scss"
   },
   "homepage": "https://github.com/dvlden/webpack-config#readme",
   "bugs": "https://github.com/dvlden/webpack-config/issues",
@@ -48,8 +50,13 @@
     "jsonminify": "^0.4.1",
     "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
+    "prettier-stylelint": "^0.4.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "stylelint": "^13.7.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-prettier": "^1.1.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
@@ -57,6 +64,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
- 
-  }
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "prettier": {}
 }
