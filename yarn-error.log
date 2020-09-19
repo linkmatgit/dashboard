@@ -1,0 +1,100 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\Linkmat\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\Linkmat\bin;C:\Python38\Scripts;C:\Python38;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Symfony;C:\Program Files\dotnet;C:\Program Files\MariaDB 10.4\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\HashiCorp\Vagrant\bin;D:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\Linkmat\AppData\Local\Microsoft\WindowsApps;D:\Users\Linkmat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Linkmat\AppData\Roaming\npm;C:\Users\Linkmat\AppData\Local\Yarn\bin;D:\Program Files\JetBrains\PhpStorm 201.4865.19\bin;C:\Users\Linkmat\AppData\Roaming\Composer\vendor\bin;C:\Users\Linkmat\.dotnet\tools;C:\Program Files\JetBrains\PhpStorm 2019.3.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;C:\Program Files\JetBrains\WebStorm 2019.3.4\bin;C:\Users\Linkmat\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  13.8.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@fortawesome%2ffontawesome-pro: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66084:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140727:22)
+      at Request.emit (events.js:321:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141699:10)
+      at Request.emit (events.js:321:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141621:12)
+      at Object.onceWrapper (events.js:427:28)
+      at IncomingMessage.emit (events.js:333:22)
+      at endReadableNT (_stream_readable.js:1201:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "webpack-config",
+    "description": "This is my Webpack 4 configuration for static projects.",
+    "version": "1.4.0",
+    "private": true,
+    "author": {
+      "name": "Nenad Novaković",
+      "email": "n.dvlden@gmail.com",
+      "url": "https://github.com/dvlden"
+    },
+    "license": "MIT",
+    "scripts": {
+      "serve": "webpack-dev-server --progress --hide-modules --mode development",
+      "build": "webpack --progress --hide-modules --mode production"
+    },
+    "homepage": "https://github.com/dvlden/webpack-config#readme",
+    "bugs": "https://github.com/dvlden/webpack-config/issues",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dvlden/webpack-config.git"
+    },
+    "keywords": [
+      "webpack",
+      "webpack 4",
+      "configuration",
+      "config"
+    ],
+    "browserslist": [
+      "last 1 major version",
+      "> 1%"
+    ],
+    "devDependencies": {
+      "@babel/core": "^7.9.6",
+      "@babel/preset-env": "^7.9.6",
+      "autoprefixer": "^9.7.6",
+      "babel-loader": "^8.1.0",
+      "browser-sync": "^2.26.7",
+      "browser-sync-webpack-plugin": "^2.2.2",
+      "clean-webpack-plugin": "^3.0.0",
+      "copy-webpack-plugin": "^6.0.0",
+      "css-loader": "^3.5.3",
+      "cssnano": "^4.1.10",
+      "fibers": "^5.0.0",
+      "file-loader": "^6.0.0",
+      "html-loader": "^1.1.0",
+      "html-webpack-plugin": "^4.3.0",
+      "image-webpack-loader": "^6.0.0",
+      "jsonminify": "^0.4.1",
+      "mini-css-extract-plugin": "^0.9.0",
+      "postcss-loader": "^3.0.0",
+      "sass": "^1.26.5",
+      "sass-loader": "^8.0.2",
+      "webpack": "^4.43.0",
+      "webpack-cli": "^3.3.11",
+      "webpack-dev-server": "^3.11.0",
+      "webpack-subresource-integrity": "^1.4.1",
+      "webpackbar": "^4.0.0"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-pro": "^5.13.0",
+      "bootstrap": "^4.5.0",
+      "jquery": "^3.5.1",
+      "popper.js": "^1.16.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

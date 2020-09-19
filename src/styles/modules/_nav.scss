@@ -1,0 +1,60 @@
+header{
+  position: relative;
+  font-family: $font-alt;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: space(3);
+  z-index: 5;
+  background: var(--nav-background);
+  color: var(--color-nav);
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+}
+.header-nav li {
+  display: block;
+  margin-top: space(2);
+
+}
+.header-nav > * + *{
+  margin-left: space(6);
+}
+.header-nav a:hover,
+.header-nav a[aria-current] {
+  color: var(--contrast);
+}
+.header-nav:first-child{
+  margin-left: space(15);
+}
+.left__nav {
+  background: var(--nav-background);
+  width: 230px;
+  position: absolute;
+  display: block;
+  height:100%;
+  margin-top: -56px;
+  overflow: hidden;
+}
+.hero__navigation li a {
+  margin: space(1);
+
+  display: block;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  line-height:40px;
+  color: var(--color-nav)
+}
+.hero__navigation{
+  margin-top: 65px;
+
+}
+.hero__navigation li:hover {
+
+}

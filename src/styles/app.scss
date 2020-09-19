@@ -1,0 +1,66 @@
+
+:root{
+  --border: #D5E3EC;
+  --color: #121C42;
+  --background-light: #FFF;
+  --background: #F7FAFB;
+  --contrast: #4869EE;
+  --space: 8px;
+  --nav-background: #333;
+  --color-nav: #fff;
+}
+
+.dark{
+
+}
+// OUTILS
+// ==================
+@import "tools/mixins";
+@import "tools/functions";
+@import "tools/typography";
+@import "tools/animations";
+@import "tools/layout";
+@import "tools/reset";
+
+
+
+// GENERIC
+// ==================
+body {
+  font-family: $font;
+  font-size: 16px;
+  color: var(--color);
+  line-height: 1.6;
+  background: var(--background);
+  scroll-margin: 100px 0 0 0;
+}
+body.light {
+  background:  var(--background-light);
+  &::after {
+    display: none;
+  }
+}
+
+body::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 580px;
+  height: 506px;
+  z-index: -1;
+  pointer-events: none;
+}
+::selection {
+  background: var(--constrast);
+  color: var(--background-light);
+}
+
+// MODULES
+// ==================
+@import "modules/nav";
+
+// PAGE
+// ==================
+
